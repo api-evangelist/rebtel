@@ -1,8 +1,26 @@
 aid: rebtel
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rebtel.png
 name: rebtel
-description: rebtel is a company surfaced as a portfolio company of balderton-capital, index-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Rebtel is a Swedish international communications company (Rebtel Networks AB,
+  registered 556680-3622, headquartered in Stockholm) serving the world's roughly
+  two billion international migrants with low-cost international calling, mobile
+  top-up / airtime recharge, and calling cards delivered through its iOS and
+  Android apps. It routes calls over optimized local phone lines to keep prices
+  low. Backed by Balderton Capital and Index Ventures. Rebtel exposes no public
+  developer API or SDK program; this profile captures the company's public web,
+  legal, support, and security.txt surface for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/rebtel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Telecommunications
+- VoIP
+- International Calling
+- Mobile Top-Up
+- Remittance
+- Consumer
+- Messaging
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,24 @@ maintainers:
 common:
 - type: Website
   url: https://www.rebtel.com/en/
+- type: Support
+  url: https://www.rebtel.com/en/help/overview/
+- type: TermsOfService
+  url: https://www.rebtel.com/en/legal-information/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.rebtel.com/en/legal-information/about-cookies/
+- type: WellKnown
+  url: well-known/rebtel-well-known.yml
+- type: SecurityTxt
+  url: well-known/rebtel-security.txt
+- type: DomainSecurity
+  url: security/rebtel-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/rebtel-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.rebtel.com/.well-known/security.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
